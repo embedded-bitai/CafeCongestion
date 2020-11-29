@@ -30,12 +30,6 @@
             Map
           </v-list-item-title>
         </v-list-item>
-
-        <v-list-item @click="test()">
-          <v-list-item-title>
-            확인
-          </v-list-item-title>
-        </v-list-item>
         <div v-if="adSt !== 'null'">
         <v-list-item @click="$router.push('/menuupdata')" >
           <v-list-item-title>
@@ -67,9 +61,6 @@ export default {
       // this.getIdAc("null")
       this.$store.dispatch("getIdAc", "null")
       console.log("logout id : " + this.id)
-    },
-    test() {
-      console.log('idSt : ' + this.idSt)
     }
   },
   computed: {
